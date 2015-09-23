@@ -1,0 +1,21 @@
+package org.vaibhav.easy;
+
+public class ReverseInteger {
+	public int reverse(int x) {
+        int  temp =x;
+        int  result=0;
+        int ten = 10;
+        for(;temp != 0;temp=temp/10){
+            result = result * ten + temp%ten;
+            System.out.println(result);
+        }
+        return result;
+        
+    }
+	public static void main(String[] args) {
+	ReverseInteger ri = new ReverseInteger();
+	ri.reverse(2147483647);
+
+	}
+
+}
